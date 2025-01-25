@@ -1,5 +1,7 @@
 package com.example.prueba;
 
+import com.example.prueba.Model.Task;
+
 import java.util.List;
 
 public interface TaskService {

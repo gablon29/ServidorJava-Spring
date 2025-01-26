@@ -1,4 +1,4 @@
-package com.example.prueba;
+package com.example.prueba.repository;
 
 import com.example.prueba.Model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;

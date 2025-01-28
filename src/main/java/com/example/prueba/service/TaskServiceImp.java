@@ -55,4 +55,12 @@ public class TaskServiceImp implements TaskService{
         }
         taskRepository.deleteById(id);
     }
+
+    @Override
+    public Task updateTask(Long id, Task task) {
+        Task taskToUpdate = getById(id);
+        taskToUpdate.setTitle(task.getTitle());
+        taskToUpdate.setDescription(task.getDescription());
+        return taskRepository.save(taskToUpdate);
+    }
 }

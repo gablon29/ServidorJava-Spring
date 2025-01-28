@@ -9,4 +9,5 @@ public interface TaskService {
     List<Task> getAllTask();
     Task getById(Long id);
     void deleteTask(Long id);
+    Task updateTask(Long id, Task task);
 }
